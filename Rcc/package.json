@@ -1,0 +1,51 @@
+{
+  "name": "caohtmloutput",
+  "version": "1.0.0",
+  "description": "Html template for CAO",
+  "main": "./out/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.config.js",
+    "build": "webpack --config webpack.prod.config.js && node replace.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-gate/RedgateChangeControl.git"
+  },
+  "keywords": [
+    "CAO",
+    "Html"
+  ],
+  "author": "Redgate Software Ltd",
+  "license": "UNLICENSED",
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.9",
+    "@babel/preset-env": "7.12.7",
+    "@babel/preset-react": "7.12.7",
+    "autoprefixer": "9.8.6",
+    "babel-loader": "8.2.1",
+    "css-loader": "5.0.1",
+    "html-webpack-inline-source-plugin": "0.0.10",
+    "html-webpack-plugin": "4.5.0",
+    "request": "2.88.2",
+    "sass": "1.29.0",
+    "postcss-loader": "4.0.4",
+    "sass-loader": "10.1.0",
+    "style-loader": "2.0.0",
+    "url-loader": "4.1.1",
+    "webpack": "4.44.2",
+    "webpack-cli": "4.2.0",
+    "webpack-dev-server": "3.11.0"
+  },
+  "dependencies": {
+    "@redgate/honeycomb-semantic-ui-theme": "^1.0.38",
+    "lodash": "^4.17.19",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "semantic-ui-react": "2.0.1"
+  }
+}
