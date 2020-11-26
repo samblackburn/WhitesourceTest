@@ -3,3 +3,4 @@ bin/
 whitesource/
 obj/
 packages/
+node_modules
